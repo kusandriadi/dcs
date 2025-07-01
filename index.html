@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +31,13 @@
             border-radius: 0.5rem;
             margin-top: 1rem;
         }
+        .prereq-card {
+            background-color: #fee2e2;
+            border-left: 5px solid #ef4444;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -39,14 +46,14 @@
         <!-- Header -->
         <header class="text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-bold text-gray-800">DCS @Binus</h1>
-            <p class="text-lg text-gray-600 mt-2">Panduan santai buat nemenin perjalanan S3 kamu selama 3 tahun.</p>
+            <p class="text-lg text-gray-600 mt-2">A casual guide to accompany your 3-year doctoral journey.</p>
         </header>
 
         <!-- Timeline Navigation -->
-        <div id="tabs" class="flex justify-center border-b border-gray-200 mb-8 space-x-2 md:space-x-4">
-            <button data-tab="year1" class="tab-button text-sm md:text-base py-3 px-4 md:px-6 border-b-4 border-transparent transition-all duration-300 focus:outline-none active">Tahun Pertama: Perkuliahan</button>
-            <button data-tab="year2" class="tab-button text-sm md:text-base py-3 px-4 md:px-6 border-b-4 border-transparent transition-all duration-300 focus:outline-none">Tahun Kedua: Disertasi</button>
-            <button data-tab="year3" class="tab-button text-sm md:text-base py-3 px-4 md:px-6 border-b-4 border-transparent transition-all duration-300 focus:outline-none">Tahun Ketiga: Kelulusan</button>
+        <div id="tabs" class="flex flex-wrap justify-center border-b border-gray-200 mb-8 space-x-2 md:space-x-4">
+            <button data-tab="year1" class="tab-button text-sm md:text-base py-3 px-4 md:px-6 border-b-4 border-transparent transition-all duration-300 focus:outline-none active">First Year: Coursework</button>
+            <button data-tab="year2" class="tab-button text-sm md:text-base py-3 px-4 md:px-6 border-b-4 border-transparent transition-all duration-300 focus:outline-none">Second Year: Dissertation</button>
+            <button data-tab="year3" class="tab-button text-sm md:text-base py-3 px-4 md:px-6 border-b-4 border-transparent transition-all duration-300 focus:outline-none">Third Year: Graduation</button>
         </div>
 
         <!-- Content Area -->
@@ -54,47 +61,47 @@
             <!-- Year 1 Content -->
             <div id="year1" class="tab-content space-y-8">
                 <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-                    <h3 class="text-2xl font-semibold text-[#009dfc] mb-2">Tahap 1: Coursework (Masa Perkuliahan)</h3>
-                    <p class="text-gray-600 mb-6">Di sini, kamu bakal fokus memperdalam materi dan mengasah dasar-dasar penelitian.</p>
+                    <h3 class="text-2xl font-semibold text-[#009dfc] mb-2">Stage 1: Coursework</h3>
+                    <p class="text-gray-600 mb-6">Here, you'll focus on deepening your knowledge and honing your research fundamentals.</p>
                     <div class="space-y-6">
                         <!-- Semester 1 -->
                         <div class="bg-sky-50 p-5 rounded-lg border-l-4 border-sky-300">
                             <h4 class="font-bold text-lg text-sky-800">Semester 1</h4>
-                            <p class="mt-2 text-gray-700">Kamu akan mengambil empat mata kuliah inti sebagai fondasi penelitian, sambil mulai aktif di forum diskusi ilmiah.</p>
+                            <p class="mt-2 text-gray-700">You'll take four core courses as a research foundation while starting to engage in scientific discussion forums.</p>
                             <div class="mt-4">
-                                <strong class="text-gray-800">Mata Kuliah Wajib (Pilih Peminatan):</strong>
+                                <strong class="text-gray-800">Required Courses (Choose a specialization):</strong>
                                 <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
                                     <li><strong>CS:</strong> SMQ, KIR, RM, PoS</li>
                                     <li><strong>IS:</strong> RTIS, AKS, RM, PoS</li>
                                 </ul>
-                                <strong class="text-gray-800 mt-4 block">Forum Diskusi:</strong>
+                                <strong class="text-gray-800 mt-4 block">Discussion Forum:</strong>
                                 <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
-                                   <li><strong>Colloquium 1:</strong> Ajang diskusi buat topik penelitian awalmu.</li>
+                                   <li><strong>Colloquium 1:</strong> A forum to discuss your initial research topic.</li>
                                 </ul>
                             </div>
                             <div class="target-card">
-                                <p class="font-bold text-amber-800 flex items-center"><span class="text-2xl mr-2">🏆</span> TARGET KELULUSAN</p>
-                                <p class="mt-1 pl-8 text-gray-700 font-semibold">Publikasi Konferensi Pertama (terindeks Scopus)</p>
+                                <p class="font-bold text-amber-800 flex items-center"><span class="text-2xl mr-2">🏆</span> GRADUATION TARGET</p>
+                                <p class="mt-1 pl-8 text-gray-700 font-semibold">First Conference Publication (Scopus-indexed)</p>
                             </div>
                         </div>
                         <!-- Semester 2 -->
                         <div class="bg-sky-50 p-5 rounded-lg border-l-4 border-sky-300">
                             <h4 class="font-bold text-lg text-sky-800">Semester 2</h4>
-                             <p class="mt-2 text-gray-700">Saatnya mengambil satu mata kuliah lanjutan dan melanjutkan diskusi riset.</p>
+                             <p class="mt-2 text-gray-700">Time to take one advanced course and continue your research discussions.</p>
                              <div class="mt-4">
-                                <strong class="text-gray-800">Mata Kuliah Pilihan:</strong>
+                                <strong class="text-gray-800">Elective Course:</strong>
                                 <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
                                     <li><strong>IS:</strong> Advanced IT Governance (AITG)</li>
                                     <li><strong>CS:</strong> Advanced Soft Computing (ASC)</li>
                                 </ul>
-                                <strong class="text-gray-800 mt-4 block">Forum Diskusi:</strong>
+                                <strong class="text-gray-800 mt-4 block">Discussion Forum:</strong>
                                 <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
-                                   <li><strong>Colloquium 2:</strong> Diskusi progres penelitian tahap awal.</li>
+                                   <li><strong>Colloquium 2:</strong> Discussing early-stage research progress.</li>
                                 </ul>
                             </div>
                             <div class="target-card">
-                                <p class="font-bold text-amber-800 flex items-center"><span class="text-2xl mr-2">🏆</span> TARGET KELULUSAN</p>
-                                <p class="mt-1 pl-8 text-gray-700 font-semibold">Publikasi Konferensi Kedua (terindeks Scopus)</p>
+                                <p class="font-bold text-amber-800 flex items-center"><span class="text-2xl mr-2">🏆</span> GRADUATION TARGET</p>
+                                <p class="mt-1 pl-8 text-gray-700 font-semibold">Second Conference Publication (Scopus-indexed)</p>
                             </div>
                         </div>
                     </div>
@@ -104,33 +111,33 @@
             <!-- Year 2 Content -->
             <div id="year2" class="tab-content hidden">
                  <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-                    <h3 class="text-2xl font-semibold text-[#009dfc] mb-2">Tahap 2: Dissertation (Fokus Disertasi & Kualifikasi)</h3>
-                    <p class="text-gray-600 mb-6">Ini adalah jantung dari program doktoralmu, di mana penelitian mandiri mulai digarap serius.</p>
+                    <h3 class="text-2xl font-semibold text-[#009dfc] mb-2">Stage 2: Dissertation & Qualification</h4>
+                    <p class="text-gray-600 mb-6">This is the heart of your doctoral program, where your independent research begins to take shape.</p>
                     <div class="space-y-6">
                         <div class="bg-sky-100 p-5 rounded-lg">
-                            <h4 class="font-bold text-lg text-sky-900">Forum Diskusi Lanjutan</h4>
+                            <h4 class="font-bold text-lg text-sky-900">Advanced Discussion Forum</h4>
                             <ul class="mt-2 list-disc list-inside text-gray-700 space-y-2">
-                                <li><strong>Colloquium 3:</strong> Diskusi progres penelitian tahap lanjut.</li>
-                                <li><strong>Symposium 1, 2, 3:</strong> Forum buat pamerin kemajuan penelitian disertasimu.</li>
+                                <li><strong>Colloquium 3:</strong> Discussing advanced-stage research progress.</li>
+                                <li><strong>Symposium 1, 2, 3:</strong> A forum to showcase your dissertation research progress.</li>
                             </ul>
                         </div>
                         <div class="bg-sky-100 p-5 rounded-lg">
-                            <h4 class="font-bold text-lg text-sky-900">Ujian Proposal & Kualifikasi</h4>
-                             <p class="text-sm text-red-600 font-semibold mt-2"><strong>Prasyarat:</strong> Wajib menyelesaikan Colloquium 1, 2, dan 3.</p>
+                            <h4 class="font-bold text-lg text-sky-900">Proposal & Qualification Exam</h4>
+                             <p class="text-sm text-red-600 font-semibold mt-2"><strong>Prerequisite:</strong> Must complete Colloquium 1, 2, and 3.</p>
                             <ul class="mt-2 list-disc list-inside text-gray-700 space-y-2">
-                                <li><strong>Ujian Proposal Penelitian:</strong> Kamu harus presentasi dan mempertahankan proposal penelitianmu di hadapan para penguji.</li>
-                                <li><strong>Ujian Kualifikasi:</strong> Ujian komprehensif untuk menguji pemahamanmu. Kalau lulus, kamu resmi jadi Doctor Candidate (Cand. Dr.).</li>
+                                <li><strong>Research Proposal Exam:</strong> You must present and defend your research proposal before the examiners.</li>
+                                <li><strong>Qualification Exam:</strong> A comprehensive exam to test your understanding. Passing this officially makes you a Doctor Candidate (Cand. Dr.).</li>
                             </ul>
                             <div class="target-card">
-                                <p class="font-bold text-amber-800 flex items-center"><span class="text-2xl mr-2">🏆</span> TARGET KELULUSAN</p>
-                                <p class="mt-1 pl-8 text-gray-700 font-semibold">Publikasi Konferensi Ketiga (terindeks Scopus)</p>
+                                <p class="font-bold text-amber-800 flex items-center"><span class="text-2xl mr-2">🏆</span> GRADUATION TARGET</p>
+                                <p class="mt-1 pl-8 text-gray-700 font-semibold">Third Conference Publication (Scopus-indexed)</p>
                             </div>
                         </div>
                          <div class="bg-sky-100 p-5 rounded-lg">
-                            <h4 class="font-bold text-lg text-sky-900">Publikasi Ilmiah</h4>
+                            <h4 class="font-bold text-lg text-sky-900">Scientific Publication</h4>
                             <div class="target-card mt-2">
-                                <p class="font-bold text-amber-800 flex items-center"><span class="text-2xl mr-2">🏆</span> TARGET KELULUSAN</p>
-                                <p class="mt-1 pl-8 text-gray-700 font-semibold">Publikasi Jurnal Pertama (terindeks Scopus)</p>
+                                <p class="font-bold text-amber-800 flex items-center"><span class="text-2xl mr-2">🏆</span> GRADUATION TARGET</p>
+                                <p class="mt-1 pl-8 text-gray-700 font-semibold">First Journal Publication (Scopus-indexed)</p>
                             </div>
                         </div>
                     </div>
@@ -140,24 +147,24 @@
             <!-- Year 3 Content -->
             <div id="year3" class="tab-content hidden">
                 <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-                    <h3 class="text-2xl font-semibold text-[#fec325] mb-2">Tahap 3: Graduation (Ujian Akhir & Wisuda)</h3>
-                    <p class="text-gray-600 mb-6">Fase pamungkas sebelum akhirnya kamu meraih gelar Doktor. Semangat!</p>
+                    <h3 class="text-2xl font-semibold text-[#fec325] mb-2">Stage 3: Graduation (Final Exams & Ceremony)</h4>
+                    <p class="text-gray-600 mb-6">The final phase before you earn your Doctorate degree. You've got this!</p>
                      <div class="space-y-6">
                         <div class="bg-amber-50 p-5 rounded-lg border-l-4 border-amber-300">
-                            <h4 class="font-bold text-lg text-amber-900">Presentasi Final & Publikasi Kunci</h4>
+                            <h4 class="font-bold text-lg text-amber-900">Final Presentation & Key Publication</h4>
                             <ul class="mt-2 list-disc list-inside text-gray-700 space-y-2">
-                                <li><strong>Simposium Hasil Penelitian & Disertasi:</strong> Momen presentasi akhir dari semua hasil riset dan disertasimu.</li>
+                                <li><strong>Research Result & Dissertation Symposium:</strong> The final presentation moment for all your research and dissertation results.</li>
                             </ul>
                             <div class="target-card mt-4">
-                                <p class="font-bold text-amber-800 flex items-center"><span class="text-2xl mr-2">🏆</span> TARGET KELULUSAN</p>
-                                <p class="mt-1 pl-8 text-gray-700 font-semibold">Publikasi Jurnal Kedua (terindeks Scopus)</p>
+                                <p class="font-bold text-amber-800 flex items-center"><span class="text-2xl mr-2">🏆</span> GRADUATION TARGET</p>
+                                <p class="mt-1 pl-8 text-gray-700 font-semibold">Second Journal Publication (Scopus-indexed)</p>
                             </div>
                         </div>
                         <div class="bg-amber-50 p-5 rounded-lg border-l-4 border-amber-300">
-                            <h4 class="font-bold text-lg text-amber-900">Ujian Akhir</h4>
+                            <h4 class="font-bold text-lg text-amber-900">Final Exams</h4>
                              <ul class="mt-2 list-disc list-inside text-gray-700 space-y-2">
-                                <li><strong>Ujian Tertutup (Closed Exam):</strong> Ujian disertasi di hadapan dewan penguji internal.</li>
-                                <li><strong>Ujian Terbuka (Open Exam):</strong> Saatnya mempertanggungjawabkan hasil disertasimu di hadapan audiens yang lebih luas, termasuk penguji eksternal.</li>
+                                <li><strong>Closed Exam:</strong> A dissertation defense in front of an internal board of examiners.</li>
+                                <li><strong>Open Exam:</strong> The final defense of your dissertation before a wider audience, including external examiners.</li>
                             </ul>
                         </div>
                     </div>
@@ -168,7 +175,7 @@
         <!-- Abbreviation Info -->
         <div class="text-center mt-12">
             <button id="openModalBtn" class="bg-gray-200 text-gray-700 font-semibold py-2 px-5 rounded-lg hover:bg-gray-300 transition-colors">
-                Lihat Legenda Singkatan
+                View Abbreviation Legend
             </button>
         </div>
     </div>
@@ -177,7 +184,7 @@
     <div id="abbreviationModal" class="modal fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 opacity-0 pointer-events-none">
         <div class="bg-white rounded-xl shadow-2xl w-full max-w-2xl transform scale-95 transition-transform duration-300">
             <div class="flex justify-between items-center p-5 border-b">
-                <h3 class="text-xl font-bold text-gray-800">Legenda Singkatan Mata Kuliah</h3>
+                <h3 class="text-xl font-bold text-gray-800">Course Abbreviation Legend</h3>
                 <button id="closeModalBtn" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
             </div>
             <div class="p-6 max-h-[60vh] overflow-y-auto">
@@ -199,7 +206,7 @@
 
     <footer class="mt-16 border-t pt-8 pb-8">
         <div class="container mx-auto text-center text-gray-500">
-            <p class="text-sm">Referensi alur program doktoral oleh:</p>
+            <p class="text-sm">Doctoral program flow reference by:</p>
             <p class="font-semibold mt-1">Dr. (Cand.) Andi Sama - DCS 17</p>
         </div>
     </footer>
