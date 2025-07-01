@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctoral Journey @BINUS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --binus-blue: #009dfc;
+            --binus-yellow: #fec325;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .tab-button.active {
+            border-color: var(--binus-blue);
+            background-color: var(--binus-blue);
+            color: white;
+            font-weight: 600;
+        }
+        .modal {
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mx-auto p-4 md:p-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Perjalanan Doktoral Anda @BINUS</h1>
+            <p class="text-lg text-gray-600 mt-2">Panduan interaktif untuk program S3 selama 3 tahun.</p>
+        </header>
+
+        <!-- Timeline Navigation -->
+        <div id="tabs" class="flex justify-center border-b border-gray-200 mb-8 space-x-2 md:space-x-4">
+            <button data-tab="year1" class="tab-button text-sm md:text-base py-3 px-4 md:px-6 border-b-4 border-transparent transition-all duration-300 focus:outline-none active">Tahun Pertama: Perkuliahan</button>
+            <button data-tab="year2" class="tab-button text-sm md:text-base py-3 px-4 md:px-6 border-b-4 border-transparent transition-all duration-300 focus:outline-none">Tahun Kedua: Disertasi</button>
+            <button data-tab="year3" class="tab-button text-sm md:text-base py-3 px-4 md:px-6 border-b-4 border-transparent transition-all duration-300 focus:outline-none">Tahun Ketiga: Kelulusan</button>
+        </div>
+
+        <!-- Content Area -->
+        <main>
+            <!-- Year 1 Content -->
+            <div id="year1" class="tab-content space-y-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="text-2xl font-semibold text-[#009dfc] mb-4">Tahap 1: Perkuliahan (Coursework)</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Semester 1 -->
+                        <div class="bg-sky-50 p-5 rounded-lg border-l-4 border-sky-300">
+                            <h4 class="font-bold text-lg text-sky-800">Semester 1</h4>
+                            <ul class="mt-3 list-disc list-inside text-gray-700 space-y-2">
+                                <li><span class="font-semibold">4 Mata Kuliah</span> (Wajib)</li>
+                                <li><span class="font-semibold">Publikasi 1:</span> Konferensi</li>
+                                <li class="text-sm">
+                                    <span class="font-semibold">Peminatan:</span>
+                                    <ul class="list-disc list-inside ml-4 mt-1">
+                                        <li>CS: SMQ, KIR, RM, PoS</li>
+                                        <li>IS: RTIS, AKS, RM, PoS</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Semester 2 -->
+                        <div class="bg-sky-50 p-5 rounded-lg border-l-4 border-sky-300">
+                            <h4 class="font-bold text-lg text-sky-800">Semester 2</h4>
+                            <ul class="mt-3 list-disc list-inside text-gray-700 space-y-2">
+                                <li><span class="font-semibold">1 Mata Kuliah</span> (Pilihan)</li>
+                                <li><span class="font-semibold">Publikasi 2:</span> Konferensi</li>
+                                <li class="text-sm">
+                                    <span class="font-semibold">Peminatan:</span>
+                                    <ul class="list-disc list-inside ml-4 mt-1">
+                                        <li>IS: AITG</li>
+                                        <li>CS: ASC</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center text-gray-600">
+                        <p>Output dari tahun pertama adalah landasan teori yang kuat dan dua publikasi ilmiah tingkat konferensi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Year 2 Content -->
+            <div id="year2" class="tab-content hidden">
+                 <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="text-2xl font-semibold text-[#009dfc] mb-4">Tahap 2: Proposal & Ujian Kualifikasi</h3>
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <!-- Colloquium -->
+                        <div class="bg-sky-100 p-5 rounded-lg flex flex-col items-center justify-center">
+                            <div class="text-4xl mb-2">🏛️</div>
+                            <h4 class="font-bold text-lg text-sky-900">Colloquium 1, 2, 3</h4>
+                            <p class="text-sm text-gray-600 mt-1">Presentasi progres riset secara berkala.</p>
+                        </div>
+                        <!-- Research & Qualification -->
+                        <div class="bg-sky-100 p-5 rounded-lg flex flex-col items-center justify-center">
+                            <div class="text-4xl mb-2">📝</div>
+                            <h4 class="font-bold text-lg text-sky-900">Ujian Proposal & Kualifikasi</h4>
+                            <p class="text-sm text-gray-600 mt-1">Mempertahankan proposal disertasi di hadapan dewan penguji.</p>
+                        </div>
+                        <!-- Symposiums -->
+                        <div class="bg-sky-100 p-5 rounded-lg flex flex-col items-center justify-center">
+                            <div class="text-4xl mb-2">🎤</div>
+                            <h4 class="font-bold text-lg text-sky-900">Symposium 1, 2, 3</h4>
+                            <p class="text-sm text-gray-600 mt-1">Menyajikan temuan riset dalam forum ilmiah.</p>
+                        </div>
+                    </div>
+                     <div class="mt-8">
+                        <h4 class="text-xl font-semibold text-center text-gray-700 mb-4">Target Publikasi</h4>
+                         <div class="grid md:grid-cols-2 gap-6 text-center">
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <p class="font-semibold text-gray-800">Publikasi 3: Konferensi</p>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <p class="font-semibold text-gray-800">Publikasi 4: Jurnal Internasional (Pertama)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Year 3 Content -->
+            <div id="year3" class="tab-content hidden">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="text-2xl font-semibold text-[#fec325] mb-6">Tahap 3: Ujian Akhir & Kelulusan</h3>
+                    <div class="relative flex flex-col md:flex-row justify-center items-center md:space-x-8 space-y-8 md:space-y-0">
+                        <!-- Flow Line -->
+                        <div class="hidden md:block absolute w-2/3 h-1 bg-gray-300 top-1/2 -translate-y-1/2"></div>
+                        
+                        <!-- Research Result Symposium -->
+                        <div class="relative text-center w-48">
+                            <div class="bg-amber-50 p-4 rounded-full w-32 h-32 mx-auto flex items-center justify-center border-4 border-white shadow">
+                                <p class="font-semibold text-amber-800">Simposium Hasil Riset</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Dissertation Symposium -->
+                        <div class="relative text-center w-48">
+                             <div class="bg-amber-50 p-4 rounded-full w-32 h-32 mx-auto flex items-center justify-center border-4 border-white shadow">
+                                <p class="font-semibold text-amber-800">Simposium Disertasi</p>
+                            </div>
+                        </div>
+
+                        <!-- Closed Exam -->
+                        <div class="relative text-center w-48">
+                            <div class="bg-amber-100 p-4 rounded-full w-32 h-32 mx-auto flex items-center justify-center border-4 border-white shadow">
+                                <p class="font-bold text-lg text-amber-900">Ujian Tertutup</p>
+                            </div>
+                        </div>
+
+                        <!-- Open Exam -->
+                        <div class="relative text-center w-48">
+                            <div class="bg-amber-200 p-4 rounded-full w-32 h-32 mx-auto flex items-center justify-center border-4 border-white shadow">
+                                <p class="font-bold text-lg text-amber-900">Ujian Terbuka</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <h4 class="text-xl font-semibold text-center text-gray-700 mb-4">Target Publikasi Final</h4>
+                         <div class="max-w-md mx-auto text-center">
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <p class="font-semibold text-gray-800">Publikasi 5: Jurnal Internasional (Kedua)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Abbreviation Info -->
+        <div class="text-center mt-12">
+            <button id="openModalBtn" class="bg-gray-200 text-gray-700 font-semibold py-2 px-5 rounded-lg hover:bg-gray-300 transition-colors">
+                Lihat Legenda Singkatan
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="abbreviationModal" class="modal fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 opacity-0 pointer-events-none">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-2xl transform scale-95 transition-transform duration-300">
+            <div class="flex justify-between items-center p-5 border-b">
+                <h3 class="text-xl font-bold text-gray-800">Legenda Singkatan Mata Kuliah</h3>
+                <button id="closeModalBtn" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+            </div>
+            <div class="p-6 max-h-[60vh] overflow-y-auto">
+                <ul class="space-y-3 text-gray-700">
+                    <li><strong class="text-[#009dfc] w-24 inline-block">CS:</strong> Computer Science</li>
+                    <li><strong class="text-[#009dfc] w-24 inline-block">IS:</strong> Information System</li>
+                    <li><strong class="text-[#009dfc] w-24 inline-block">RTIS:</strong> Research Trends in Information System</li>
+                    <li><strong class="text-[#009dfc] w-24 inline-block">AKS:</strong> Advanced Knowledge System</li>
+                    <li><strong class="text-[#009dfc] w-24 inline-block">SMQ:</strong> Software Metrics & Quality</li>
+                    <li><strong class="text-[#009dfc] w-24 inline-block">KIR:</strong> Knowledge Information & Retrieval</li>
+                    <li><strong class="text-[#009dfc] w-24 inline-block">RM:</strong> Research Methodology</li>
+                    <li><strong class="text-[#009dfc] w-24 inline-block">PoS:</strong> Philosophy of Science</li>
+                    <li><strong class="text-[#009dfc] w-24 inline-block">AITG:</strong> Advanced IT Governance</li>
+                    <li><strong class="text-[#009dfc] w-24 inline-block">ASC:</strong> Advanced Soft Computing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-16 border-t pt-8 pb-8">
+        <div class="container mx-auto text-center text-gray-500">
+            <p class="text-sm">Referensi alur program doktoral oleh:</p>
+            <p class="font-semibold mt-1">Dr. (Cand.) Andi Sama - DCS 17</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Deactivate all tabs and content
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.add('hidden'));
+                    
+                    // Activate clicked tab and content
+                    tab.classList.add('active');
+                    const contentId = tab.getAttribute('data-tab');
+                    document.getElementById(contentId).classList.remove('hidden');
+                });
+            });
+
+            // Modal functionality
+            const modal = document.getElementById('abbreviationModal');
+            const openBtn = document.getElementById('openModalBtn');
+            const closeBtn = document.getElementById('closeModalBtn');
+            const modalContent = modal.querySelector('div');
+
+            const openModal = () => {
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+                modalContent.classList.remove('scale-95');
+            };
+
+            const closeModal = () => {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                modalContent.classList.add('scale-95');
+            };
+
+            openBtn.addEventListener('click', openModal);
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
